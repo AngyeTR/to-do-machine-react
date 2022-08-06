@@ -40,5 +40,6 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://github.com/AngyeTR/to-do-machine-react"
+  
+  "homepage": "https://AngyeTR.github.io/to-do-machine-react"
 }
