@@ -1,13 +1,13 @@
 .createTodoButton {
-    background-color: #61DAFA;
+    background-color: hotpink;
     box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
     border: none;
     border-radius: 50%;
     cursor: pointer;
     font-size: 50px;
     position: fixed;
-    bottom: 24px;
-    right: 24px;
+    bottom: 44px;
+    right: 34px;
     font-weight: bold;
     color: #FAFAFA;
     display: flex;
@@ -23,4 +23,15 @@
   
   .createTodoButton:hover {
     transform: rotate(224deg);
+  }
+
+  @media only screen and (min-width: 850px) {
+    .createTodoButton {
+      background-color: #61DAFA;
+      height: 94px;
+      width: 94px;
+      right: 54px;
+      bottom: 64px;
+
+    }
   }

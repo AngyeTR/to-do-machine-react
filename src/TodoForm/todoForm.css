@@ -1,7 +1,7 @@
 form {
     width: 90%;
     max-width: 300px;
-    background-color: #fff;
+    background-color: #c9e7cd;
     padding: 33px 40px;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ form {
   
   textarea {
     background-color: #F9FBFC;
-    border: 2px solid #202329;
+    border: 2px solid rgba(101,158,118,255);
     border-radius: 2px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
     color: #1E1E1F;
@@ -59,13 +59,19 @@ form {
     border-radius: 2px;
     border: none;
     font-family: 'Montserrat';
+    border-radius: 10px;
+    margin-top: 15px;
   }
   
   .todoForm-button--add {
-    background: #61DAFA;
+    background: #cbe8d0;
     box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+    margin-left: 2px;
   }
   
   .todoForm-button--cancel {
-    background: transparent;
+    background: #f5cae5;
+    margin-right: 2px;;
+    
+    
   }

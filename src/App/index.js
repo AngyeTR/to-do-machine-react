@@ -11,7 +11,8 @@ import { TodosLoading } from "../TodosLoading/index";
 import { EmptyTodos } from "../EmptyTodos/index";
 import { TodoForm } from "../TodoForm/index";
 import { CreateTodoButton } from "../CreateTodoButton/index.js";
-import {Modal} from "../Modal/index"
+import {Modal} from "../Modal/index";
+import { ChangeAlert} from "../ChangeAlert";
 
 
 // const defaultTodos = [
@@ -36,7 +37,7 @@ function App() {
     searchValue, 
     setSearchValue,
     addTodo, 
-    
+    synTodos,
      } = useTodos();
   return (  
     <React.Fragment>
@@ -61,8 +62,9 @@ function App() {
       onError={()=> <TodosError/>}
       onLoading={()=> <TodosLoading/>}
       onEmptyTodos = { ()=> <EmptyTodos/>}
-      onEmptySearchResults = { (searchText) => <p>No hay resultados para "{searchText}"</p>}
-      
+      onEmptySearchResults = { (searchText) =>
+        <p>No hay resultados para "{searchText}"</p>
+      }
        render = {todo => (
          <TodoItem
              key={todo.text}
@@ -104,13 +106,16 @@ function App() {
 
       {!!openModal && (
           <Modal>
-            <TodoForm addTodo={addTodo}/>
+            <TodoForm addTodo={addTodo} setOpenModal= {setOpenModal}/>
           </Modal>
       )}
 
       <CreateTodoButton  setOpenModal= {setOpenModal} 
       openModal ={openModal}
       />
+
+      <ChangeAlert
+      synchronize = {synTodos}/>
     </React.Fragment>
   ); 
 }
