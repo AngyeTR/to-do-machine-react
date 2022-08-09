@@ -1,13 +1,13 @@
 {
-  "files": {
-    "main.css": "/to-do-machine-react/static/css/main.8e6fd78a.css",
-    "main.js": "/to-do-machine-react/static/js/main.8f6d2a8f.js",
-    "index.html": "/to-do-machine-react/index.html",
-    "main.8e6fd78a.css.map": "/to-do-machine-react/static/css/main.8e6fd78a.css.map",
-    "main.8f6d2a8f.js.map": "/to-do-machine-react/static/js/main.8f6d2a8f.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.8e6fd78a.css",
-    "static/js/main.8f6d2a8f.js"
-  ]
+  "main.css": "/to-do-machine-react/static/css/main.a57bb1c9.chunk.css",
+  "main.js": "/to-do-machine-react/static/js/main.58785211.chunk.js",
+  "main.js.map": "/to-do-machine-react/static/js/main.58785211.chunk.js.map",
+  "static/js/1.bee36d96.chunk.js": "/to-do-machine-react/static/js/1.bee36d96.chunk.js",
+  "static/js/1.bee36d96.chunk.js.map": "/to-do-machine-react/static/js/1.bee36d96.chunk.js.map",
+  "runtime~main.js": "/to-do-machine-react/static/js/runtime~main.72fb2221.js",
+  "runtime~main.js.map": "/to-do-machine-react/static/js/runtime~main.72fb2221.js.map",
+  "static/css/main.a57bb1c9.chunk.css.map": "/to-do-machine-react/static/css/main.a57bb1c9.chunk.css.map",
+  "index.html": "/to-do-machine-react/index.html",
+  "precache-manifest.e2d70748b8202b91cd21fecd531b1dba.js": "/to-do-machine-react/precache-manifest.e2d70748b8202b91cd21fecd531b1dba.js",
+  "service-worker.js": "/to-do-machine-react/service-worker.js"
 }
