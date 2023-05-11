@@ -1,26 +1,31 @@
+
 form {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
-    background-color: #c9e7cd;
+    background-color: rgba(201, 231, 205, 0.5);
     padding: 33px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
+    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+    border-radius: 3%;
+    color: #005350;
   }
   
   label {
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    color: #1E1E1F;
+    font-size: 20px; 
     margin-bottom: 26px;
+
   }
   
   textarea {
     background-color: #F9FBFC;
     border: 2px solid rgba(101,158,118,255);
-    border-radius: 2px;
+    border-radius: 2%;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
     color: #1E1E1F;
     font-size: 20px;
@@ -52,7 +57,7 @@ form {
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
-    color: #202329;
+    color: #005350;
     font-weight: 400;
     width: 120px;
     height: 48px;
@@ -72,6 +77,6 @@ form {
   .todoForm-button--cancel {
     background: #f5cae5;
     margin-right: 2px;;
-    
+    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
     
   }

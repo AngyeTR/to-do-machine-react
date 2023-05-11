@@ -9,9 +9,9 @@ function useTodos() {
         saveItem: saveTodos,
         loading, error,
         syncUp: synTodos,
-      } = useLocalStorage("TODOS_V1", []);
+      } = useLocalStorage("TODOS_V2", []);
       const [searchValue, setSearchValue] = React.useState("");
-      const [openModal, setOpenModal] = React.useState(false);
+      //const [openModal, setOpenModal] = React.useState(false);
     
       const completedTodos = todos.filter(todo => !!todo.completed).length;
       const totalTodos = todos.length;
@@ -29,24 +29,38 @@ function useTodos() {
         });   
       }
 
+      const findTodo = (id => {
+        const todoIndex = todos.findIndex( todo => todo.id === id);
+        return todos[todoIndex]
+      })
+
       const addTodo = (text) => {
+        const id= Date.now();
         const newTodos = [...todos];
         newTodos.push({
           completed: false, 
           text: text,
+          id
         })
         saveTodos(newTodos);
       };
 
-      const completeTodo = (text) => {
-        const todoIndex = todos.findIndex( todo => todo.text === text);
+      const completeTodo = (id) => {
+        const todoIndex = todos.findIndex( todo => todo.id === id);
         const newTodos = [...todos];
         newTodos[todoIndex].completed= !newTodos[todoIndex].completed;
         saveTodos(newTodos);
       };
+
+      const editTodo = (id, text) => {
+        const todoIndex = todos.findIndex( todo => todo.id === id);
+        const newTodos = [...todos];
+        newTodos[todoIndex].text= text;
+        saveTodos(newTodos);
+      };
     
-      const deleteTodo = (text) => {
-        const todoIndex = todos.findIndex( todo => todo.text === text);
+      const deleteTodo = (id) => {
+        const todoIndex = todos.findIndex( todo => todo.id === id);
         const newTodos = [...todos];
         newTodos.splice(todoIndex, 1); 
         saveTodos(newTodos);
@@ -62,14 +76,17 @@ function useTodos() {
             setSearchValue,
             searchedTodos,
             addTodo,
+            editTodo,
             completeTodo,
             deleteTodo,
-            openModal,
-          setOpenModal,
+            findTodo,
+            //openModal,
+          //setOpenModal,
           synTodos,
         }
 
     );
 }
+
 
 export { useTodos };
