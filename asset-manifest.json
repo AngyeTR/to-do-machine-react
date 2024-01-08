@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/to-do-machine-react/static/css/main.7441397d.css",
-    "main.js": "/to-do-machine-react/static/js/main.10e361e2.js",
+    "main.css": "/to-do-machine-react/static/css/main.8c2baa37.css",
+    "main.js": "/to-do-machine-react/static/js/main.da988ae8.js",
     "index.html": "/to-do-machine-react/index.html",
     "static/media/delete.svg": "/to-do-machine-react/static/media/delete.a2ce781d87539ab422ca9b3bbc2b4508.svg",
     "static/media/edit.svg": "/to-do-machine-react/static/media/edit.ca80ed44ca21affa8d3f6064291bc87e.svg",
     "static/media/check.svg": "/to-do-machine-react/static/media/check.38f596e64d38d54463f988385b633c05.svg",
-    "main.7441397d.css.map": "/to-do-machine-react/static/css/main.7441397d.css.map",
-    "main.10e361e2.js.map": "/to-do-machine-react/static/js/main.10e361e2.js.map"
+    "main.8c2baa37.css.map": "/to-do-machine-react/static/css/main.8c2baa37.css.map",
+    "main.da988ae8.js.map": "/to-do-machine-react/static/js/main.da988ae8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7441397d.css",
-    "static/js/main.10e361e2.js"
+    "static/css/main.8c2baa37.css",
+    "static/js/main.da988ae8.js"
   ]
 }
