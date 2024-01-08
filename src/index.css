@@ -3,17 +3,14 @@ body {
   margin: 0; 
   padding: 0;
   padding-top: 100px;
-  background: #F2F4F5;
-  background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  background-image: url("  https://cdn.pixabay.com/photo/2017/05/19/06/22/desk-2325627__340.jpg");
-  background-image: url("  https://static.vecteezy.com/system/resources/thumbnails/003/655/529/small_2x/minimal-work-space-creative-flat-lay-of-workspace-desk-top-view-office-desk-with-keyboard-mouse-and-notebook-on-pastel-green-color-background-top-view-with-copy-space-flat-laygraphy-photo.jpg");
-
-
+  background: #cae8d0;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/655/529/small_2x/minimal-work-space-creative-flat-lay-of-workspace-desk-top-view-office-desk-with-keyboard-mouse-and-notebook-on-pastel-green-color-background-top-view-with-copy-space-flat-laygraphy-photo.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  color: #1E1E1F;
+  color: #005350;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 #root {

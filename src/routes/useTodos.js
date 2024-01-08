@@ -34,12 +34,14 @@ function useTodos() {
         return todos[todoIndex]
       })
 
-      const addTodo = (text) => {
+      const addTodo = (text, priority, endDate) => {
         const id= Date.now();
         const newTodos = [...todos];
         newTodos.push({
           completed: false, 
           text: text,
+          priority: priority,
+          endDate: endDate,
           id
         })
         saveTodos(newTodos);

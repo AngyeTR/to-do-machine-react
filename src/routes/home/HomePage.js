@@ -60,6 +60,8 @@ function HomePage() {
          <TodoItem
              key={todo.id}
              text={todo.text}
+             priority={todo.priority}
+             endDate={todo.endDate}
              completed={todo.completed}
              onComplete={() => completeTodo(todo.id)}
              onEdit={() => 

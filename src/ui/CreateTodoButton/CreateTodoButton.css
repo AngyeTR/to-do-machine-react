@@ -13,12 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
-    width: 64px;
-  
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5%;
+    margin-right: 5%;
     transform: rotate(0);
     transition: .3s ease;
     z-index: 1;
+    
   }
   
   .createTodoButton:hover {
@@ -27,11 +29,10 @@
 
   @media only screen and (min-width: 850px) {
     .createTodoButton {
-      background-color: #61DAFA;
       height: 94px;
       width: 94px;
-      right: 54px;
-      bottom: 64px;
-
+      left: 54px;
+      bottom: 44px;
+    
     }
   }

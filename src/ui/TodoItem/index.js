@@ -12,11 +12,20 @@ function TodoItem(props) {
         completed={props.completed}
         onComplete={props.onComplete}
       />
-      <p
-        className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}
-      >
-        {props.text}
-      </p>
+      
+         <p
+           className={`todoItem-p ${props.completed && 'todoItem-p--complete'}`}
+          >
+          {props.text}
+       </p>
+       <p className="info">
+        <strong>Prioridad: </strong> {props.priority}
+        <strong> Fecha Límite: </strong> {props.endDate}
+
+       </p>
+      
+      
+      
       <EditIcon
         onEdit={props.onEdit}
       />

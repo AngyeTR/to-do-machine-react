@@ -6,9 +6,9 @@ function NewTodo(){
     const { addTodo } = useTodos();
     return (
         <TodoForm  
-        label="Escribe tu nuevo TODO"
+        label="Escribe tu nueva Tarea"
         submitText="Añadir"
-        submitEvent={(text) => addTodo(text)}/>
+        submitEvent={(text, priority, endDate) => addTodo(text, priority, endDate)}/>
     ) 
 }
 

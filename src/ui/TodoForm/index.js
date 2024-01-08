@@ -7,12 +7,20 @@ function TodoForm(props
     //addTodo, setOpenModal
 ){
     const navigate = useNavigate();
-    const [newTodoValue, setNewTodoValue] = React.useState(props.prevText || "");
-   
+    const [newTodoValue, setNewTodoValue] = React.useState(props.prevText || "Nueva tarea");
+    const [newTodoPriority, setNewTodoPriority] = React.useState(props.prevPriority || "Baja");
+    const [newTodoDate, setNewTodoDate] = React.useState(props.prevDate || "Sin fecha límite");
 
     const onChange = (event)=> {
         setNewTodoValue(event.target.value);
+    } ;   
+    const onChangePriority = (event)=> {
+        setNewTodoPriority(event.target.value);
+    } ;   
+    const onChangeDate = (event)=> {
+        setNewTodoDate(event.target.value);
     } ;
+    
 
     const onCancel = () => {
         navigate("/")
@@ -20,7 +28,7 @@ function TodoForm(props
 
     const onSubmit = (event) => {
         event.preventDefault();
-        props.submitEvent(newTodoValue);
+        props.submitEvent(newTodoValue, newTodoPriority, newTodoDate);
         navigate('/');
         //addTodo(newTodoValue);
         //setOpenModal(false);
@@ -32,7 +40,26 @@ function TodoForm(props
             <textarea 
             value= {newTodoValue}
             onChange= {onChange}
-            placeholder="Crea una nueva tarea"></textarea>
+            placeholder="Crea una nueva tarea"
+            autofocus></textarea>
+            <div>
+                <label for="priority">Prioridad:</label>
+                <select id="priority" name="priority" 
+                onChange={onChangePriority}
+                value= {newTodoPriority}>
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                 </select>
+            </div>
+           
+            <div>
+                <label for="end-date">Vencimiento:</label>
+                <input type="date" id="end-date" name="end-date"
+                onChange={onChangeDate}
+                value= {newTodoDate}/>
+            </div>
+           
             <div className="buttonContainer">
                 <button 
                     className="todoForm-button todoForm-button--cancel"

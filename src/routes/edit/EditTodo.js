@@ -10,10 +10,13 @@ function EditTodo(){
     const params = useParams();
     const id = Number(params.id);
 
-    let todoText = ""
+    let todoText, todoDate, todoPriority = ""
+
 
     if(location.state?.todo){
         todoText = location.state.todo.text;
+        todoDate= location.state.todo.endDate;
+        todoPriority = location.state.todo.priority
     }
     else if(loading){
         return <Loading/>
@@ -26,8 +29,10 @@ function EditTodo(){
 
     return (
         <TodoForm  
-        label="Edita tu TODO"
+        label="Edita tu Tarea"
         prevText = {todoText}
+        prevPriority= { todoPriority}
+        prevDate= {todoDate}
         submitText="Editar"
         submitEvent={(newText) => editTodo(id, newText)}/>
     ) 
